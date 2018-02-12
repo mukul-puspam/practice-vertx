@@ -1,0 +1,17 @@
+apply plugin:'java'
+apply plugin:'application'
+
+sourceCompatibility=1.8
+targetCompatibility=1.8
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    compile 'io.vertx:vertx-web:3.5.0'
+    compile 'org.apache.commons:commons-lang3:3.7'
+    compile 'ch.qos.logback:logback-classic:1.1.1'
+}
+
+mainClassName="com.pokuri.services.Bootloader"
